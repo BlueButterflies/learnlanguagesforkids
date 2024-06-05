@@ -1,0 +1,33 @@
+.footer{
+    background: var(--bs-primary);
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    padding: 5% 0;
+}
+
+.footer .icons{
+    color: white;
+    margin: 0 2%;
+}
+.footer .icons svg{
+    margin: 3% 0;
+    transform: 1s;
+}
+
+.footer .icons svg:hover{
+    color: var(--bs-info-bg-subtle);
+    transform: scale(1.1);
+}
+
+.footer .link{
+    color: white;
+    text-decoration: none;
+    margin: 0 2%;
+}
+
+.contributing, .license{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
