@@ -1,4 +1,4 @@
-# Learn languages for kinds
+# Learn languages for kids
 
 ## Descrizione
 
