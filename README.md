@@ -9,6 +9,8 @@ Welcome to my project for young children, where you will find pictures and their
 * JS
 * HTML
 * CSS
+* React.js
+* Bootstrap
 
 # How to contribuite
 
