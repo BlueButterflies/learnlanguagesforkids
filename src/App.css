@@ -1,3 +1,23 @@
+.navigation .link{
+    color: var(--bs-primary);
+    text-decoration: none;
+
+}
+
+.card{
+    background: var(--bs-secondary-bg-subtle);
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2%;
+    box-shadow: 0 4px 8px rgba(13, 0, 248, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card .image{
+    height: auto;
+    border-radius: 10px;
+}
 .footer{
     background: var(--bs-primary);
     justify-content: center;
@@ -26,8 +46,16 @@
     margin: 0 2%;
 }
 
+.footer .link:hover{
+    color: rgb(81, 81, 207);
+}
+
 .contributing, .license{
     justify-content: center;
     text-align: center;
     margin-bottom: 5%;
+}
+.contributing a, .license a{
+    color: var(--bs-primary);
+    text-decoration: none;
 }
