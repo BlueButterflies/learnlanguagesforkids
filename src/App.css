@@ -18,6 +18,16 @@
     height: auto;
     border-radius: 10px;
 }
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(13, 0, 248, 0.2);
+}
+
+.footer-container{
+    width: 100%;
+}
+
 .footer{
     background: var(--bs-primary);
     justify-content: center;

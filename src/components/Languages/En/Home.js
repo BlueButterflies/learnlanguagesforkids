@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Button, CardGroup} from 'react-bootstrap';
+import { Link } from 'react-router-dom'
 
 //import Alphabet from '../En/Alphabet';  Import the Alphabet component
 
@@ -12,13 +13,13 @@ const Home = () => {
                 <Card className="card" style={{ width: '5rem'}}> 
                     <Card.Img className="image" variant="top" src="https://img.freepik.com/free-vector/english-alphabets_1308-2901.jpg" />
                     <Card.Body>
-                        <Card.Link href="./Alphabet">Alphabet</Card.Link>
+                        <Link to={"/en/alphabet"} className="btn">Alphabet</Link>
                     </Card.Body>
                 </Card>
                 <Card className="card" style={{ width: '5rem' }}>
                     <Card.Img variant="top" src="https://www.shutterstock.com/image-vector/cute-animals-collection-farm-wild-600nw-783342166.jpg" />
                     <Card.Body>
-                        <Button variant="primary">Animlas</Button>
+                        <Button variant="primary">Animals</Button>
                     </Card.Body>
                 </Card>
                 <Card className="card" style={{ width: '5rem' }}>
