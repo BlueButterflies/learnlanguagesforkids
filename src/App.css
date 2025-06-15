@@ -4,26 +4,40 @@
 
 }
 
-.card{
-    background: var(--bs-secondary-bg-subtle);
+.home{
+    background: var(--bs-light);
     border-radius: 10px;
     padding: 2%;
     margin: 2%;
+    justify-items: center;
+    justify-content: center;
     box-shadow: 0 4px 8px rgba(13, 0, 248, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card .image{
-    height: auto;
+.btn{
+    margin-top: 10%;
+}
+
+.card{
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2%;
+    justify-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(13, 0, 248, 0.1);
+}
+
+.home .image{
+    width: 50%;
+    height: 50%;
     border-radius: 10px;
 }
 
-.card:hover{
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(13, 0, 248, 0.2);
+.card .image{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
 }
-
 .footer-container{
     width: 100%;
 }

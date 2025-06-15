@@ -1,57 +1,78 @@
 import React from "react";
-import { Card, Button, CardGroup} from 'react-bootstrap';
+import { Card, Button, CardGroup, CardBody } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 
-//import Alphabet from '../En/Alphabet';  Import the Alphabet component
 
 
 const Home = () => {
 
     return (
-        <>
-            <CardGroup className="mb-3">
-                <Card className="card" style={{ width: '5rem'}}> 
-                    <Card.Img className="image" variant="top" src="https://img.freepik.com/free-vector/english-alphabets_1308-2901.jpg" />
-                    <Card.Body>
-                        <Link to={"/en/alphabet"} className="btn">Alphabet</Link>
-                    </Card.Body>
-                </Card>
-                <Card className="card" style={{ width: '5rem' }}>
-                    <Card.Img variant="top" src="https://www.shutterstock.com/image-vector/cute-animals-collection-farm-wild-600nw-783342166.jpg" />
-                    <Card.Body>
-                        <Button variant="primary">Animals</Button>
-                    </Card.Body>
-                </Card>
-                <Card className="card" style={{ width: '5rem' }}>
-                    <Card.Img variant="top" src="https://cdn.firstcry.com/education/2022/11/29123342/Types-Of-Plants-In-English-For-Preschoolers-And-Kids.jpg" />
-                    <Card.Body>
-                        <Button variant="primary">Plants</Button>
-                    </Card.Body>
-                </Card> 
-            </CardGroup>
+        <div className="card">
+            <div className="mb-3">
+                <CardGroup className="text-center">
+                    <Card className="card text-center" style={{ width: '5rem' }}>
+                        <CardBody>
+                            <Card.Img className="image" variant="top" src="https://img.freepik.com/vettori-premium/simpatico-disegno-alfabeto-inglese-per-bambini-divertente-collezione-di-lettere-dino-colorate-abc_308665-1387.jpg" />
+                            <div className="mb-2"></div>
+                            <Button variant="outline-primary" size="lg" as={Link} to="./alphabet">Alphabet</Button>
+                        </CardBody>
+                    </Card>
+                    <Card className="card text-center" style={{ width: '5rem' }}>
+                        <CardBody>
+                            <Card.Img className="image" variant="top" src="https://img.freepik.com/vettori-gratuito/raccolta-di-diversi-animali-domestici_23-2148511801.jpg?ga=GA1.1.1519934233.1748187626&semt=ais_hybrid&w=740" />
+                            <div className="mb-2"></div>
+                            <Button variant="outline-primary" size="lg" as={Link} to="./animals">Animals</Button>
+                        </CardBody>
+                    </Card>
+                    <Card className="card" style={{ width: '5rem' }}>
+                        <CardBody>
+                            <Card.Img className="image" variant="top" src="https://img.freepik.com/vettori-gratuito/collezione-di-piante-d-appartamento-disegnata-a-mano_23-2148910155.jpg?ga=GA1.1.1519934233.1748187626&semt=ais_hybrid&w=740" />
+                            <div className="mb-2"></div>
+                            <Button variant="outline-primary" size="lg" as={Link} to="./plants">Plants</Button>
+                        </CardBody>
+                    </Card>
+                    <Card className="card" style={{ width: '5rem' }}>
+                        <CardBody>
+                            <Card.Img className="image" variant="top" src="https://img.freepik.com/vettori-gratuito/insieme-di-vettori-di-raccolta-piatti-illustrazione-di-vari-frutti_41066-3874.jpg?ga=GA1.1.1519934233.1748187626&semt=ais_hybrid&w=740" />
+                            <div className="mb-2"></div>
+                            <Button variant="outline-primary" size="lg" as={Link} to="./food">Fruit</Button>
+                        </CardBody>
+                    </Card>
+                </CardGroup>
 
-            <CardGroup className="mb-3">
-                <Card className="card" style={{ width: '5rem'}}> 
-                    <Card.Img className="image" variant="top" src="https://img.freepik.com/free-vector/counting-numbers-with-kids-balloons_1308-71435.jpg" />
-                    <Card.Body>
-                        <Button variant="primary">Numbers</Button>
-                    </Card.Body>
-                </Card>
-                <Card className="card" style={{ width: '5rem' }}>
-                    <Card.Img variant="top" src="https://img.freepik.com/free-vector/colorful-baby-clothes-boy-girl-cartoon-illustration-set-hand-drawn-pants-dresses-blouses-accessories-socks-winter-jacket-cap-white-background-childrens-wardrobe-fashion-concept_74855-22418.jpg?semt=ais_hybrid&w=740" />
-                    <Card.Body>
-                        <Button variant="primary">Clothes</Button>
-                    </Card.Body>
-                </Card>
-                <Card className="card" style={{ width: '5rem' }}>
-                    <Card.Img variant="top" src="https://content.tinytap.it/FE258E0B-1BBE-446C-9179-3BD71A07927F/coverImage.png?ver=2" />
-                    <Card.Body>
-                        <Button variant="primary">Part of the body</Button>
-                    </Card.Body>
-                </Card> 
-            </CardGroup>
+                <CardGroup className="text-center">
+                    <Card className="card text-center" style={{ width: '5rem' }}>
+                        <Card.Body>
+                        <Card.Img className="image" variant="top" src="https://img.freepik.com/vettori-gratuito/pulsanti-del-sito-web-con-i-numeri_1083-85.jpg?ga=GA1.1.1519934233.1748187626&semt=ais_hybrid&w=740" />
+                        <div className="mb-2"></div>
+                            <Button variant="outline-primary" size="lg" as={Link} to="./numbers">Numbers</Button>
+                        </Card.Body>
+                    </Card>
+                    <Card className="card text-center" style={{ width: '5rem' }}>
+                       <Card.Body> 
+                        <Card.Img className="image" variant="top" src="https://img.freepik.com/vettori-gratuito/un-insieme-di-stoffa-diversa-su-sfondo-bianco_1308-98525.jpg?ga=GA1.1.1519934233.1748187626&semt=ais_hybrid&w=740" />
+                        <div className="mb-2"></div>
+                            <Button variant="outline-primary" size="lg" as={Link} to="./clothes"> Clothes</Button>
+                        </Card.Body>
+                    </Card>
+                    <Card className="card text-center" style={{ width: '5rem' }}>
+                        <Card.Body>
+                        <Card.Img className="image" variant="top" src="https://img.freepik.com/vettori-gratuito/illustrazione-disegnata-a-mano-del-fumetto-del-piccolo-ragazzo-asiatico_23-2150445628.jpg?ga=GA1.1.1519934233.1748187626&semt=ais_hybrid&w=740" />
+                        <div className="mb-2"></div>
+                            <Button variant="outline-primary" size="lg" as={Link} to="./partOfTheBody">Part of the body</Button>
+                        </Card.Body>
+                    </Card>
+                    <Card className="card text-center" style={{ width: '5rem' }}>
+                        <Card.Body>
+                        <Card.Img className="image" variant="top" src="https://img.freepik.com/vettori-gratuito/progettazione-mezzi-di-trasporto_1126-205.jpg?ga=GA1.1.1519934233.1748187626&semt=ais_hybrid&w=740" />
+                        <div className="mb-2"></div>
+                            <Button variant="outline-primary" size="lg" as={Link} to="./vehicles">Vehicles</Button>
+                        </Card.Body>
+                        </Card>
+                </CardGroup>
+            </div>
 
-        </>
+        </div>
     );
 }
 

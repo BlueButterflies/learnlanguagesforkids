@@ -9,6 +9,7 @@ import License from './components/Footer/License';
 import Privacy from './components/Footer/Privacy';
 import Terms from './components/Footer/Terms';
 
+import Home from './components/Home/Home';
 /* Import your language components here. You can add as many languages as you want. */
 import En from './components/Languages/En/Home';
 import Alphabet from './components/Languages/En/Alphabet';
@@ -23,11 +24,11 @@ import De from './components/Languages/De';
 function App() {
   return (
     <div className="App">
-      <Navigation />
+      <Navigation /> 
       <div className="mt-5 mb-5"></div>
       <div className="container">
         <Routes>
-          <Route path='/' element={<En />} />
+          <Route path='/' element={<Home />} />
         </Routes>
 
         <Routes>
@@ -41,11 +42,11 @@ function App() {
         <Routes>
           <Route path='/en/alphabet' element={<Alphabet />} />
           {/* Add more routes for other components as needed */}
-          {/* Example: <Route path='/animals' element={<Animals/>}/> */}
-          {/* Example: <Route path='/plants' element={<Plants/>}/> */}
-          {/* Example: <Route path='/numbers' element={<Numbers/>}/> */}
-          {/* Example: <Route path='/clothes' element={<Clothes/>}/> */}
-          {/* Example: <Route path='/bodyparts' element={<BodyParts/>}/> */}
+          {/* Example: <Route path='en/animals' element={<Animals/>}/> */}
+          {/* Example: <Route path='en/plants' element={<Plants/>}/> */}
+          {/* Example: <Route path='en/numbers' element={<Numbers/>}/> */}
+          {/* Example: <Route path='en/clothes' element={<Clothes/>}/> */}
+          {/* Example: <Route path='en/bodyparts' element={<BodyParts/>}/> */}
         </Routes>
         <Routes>
           <Route path='/contributing' element={<Contributing />} />
